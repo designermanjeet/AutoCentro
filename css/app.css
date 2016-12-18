@@ -7,12 +7,17 @@
 .auto-banner { background: url(../img/young-woman-receiving-keys-new-car-her-53965023.jpg) no-repeat center 5% /cover; height: 600px; }
 .auto-banner .search-form { background: #f4f4f4; border: 3px solid #0c8548; border-radius: 15px; margin-top: 70px; }
 
-.featured-listing .card { width: 33.3333333%; border: none; float: left; margin-bottom: 0; overflow: hidden; }
+.featured-listing .card, .recent-listing .card { width: 33.3333333%; border: none; float: left; margin-bottom: 0; overflow: hidden; border-radius: 0; }
 .featured-listing .card>img { max-width: 100%; max-height: 100%; transform: scale(1.1);}
 .featured-listing .card>img:hover { transform: scale(1);}
+.featured-listing .card-text { position: absolute; bottom: 10px; left: 10px; color: #fff; font-weight: bold; }
 
+.recent-listing .card { border-radius: 0; }
+.card-wrap { margin: 7px; background: #f4f4f4; border: 1px solid #eee; }
 
 /******************Common Class********************/
+.btn { border-radius: 0; }
 .pos-rel { position: relative; }
 .overlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: .4; background: #000; }
 .opacity5 { opacity: .5; }
+.img-res { max-width: 100%; max-height: 100%; }
