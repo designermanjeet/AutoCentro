@@ -1,18 +1,28 @@
 * { transition: all .4s ease-in-out 0s; }
 
+.navbar { background-color: #068149; border-radius: 0; }
 .navbar-brand { max-width: 225px; padding: 0; }
 .navbar-brand img { max-width: 100%; }
 .form-ul-wrap { padding-top: 15px; }
 
+.navbar .navbar-nav { padding-top: 10px; }
+.navbar-nav .nav-link { color: #fff; padding: 0; line-height: 1; padding-bottom: 2px; font-size: 17px; }
+.navbar-nav .nav-link:hover { color: #ccc; }
+.navbar-nav .nav-item { border-right: 1px solid #fff; padding-right: 1em; }
+.navbar-nav .nav-item:nth-last-child(1) { border-right: none; }
+.navbar .input-group-addon { border: none; border-radius: 0; background: #e6583b; color: #fff; }
+.navbar .form-inline .input-group>.form-control { border: none; border-radius: 0; }
 .auto-banner { background: url(../img/young-woman-receiving-keys-new-car-her-53965023.jpg) no-repeat center center /cover; height: 600px; }
 .auto-banner .search-form { background: #f4f4f4; border: 3px solid #0c8548; border-radius: 15px; margin-top: 70px; }
+
+.heading { background: url(../img/bodybg.jpg) repeat left top; border-left: 10px solid #068149; padding: 10px 10px 12px; text-align: left; }
 
 .featured-listing .card, .recent-listing .card { width: 33.3333333%; border: none; float: left; margin-bottom: 0; overflow: hidden; border-radius: 0; }
 .featured-listing .card>img { max-width: 100%; max-height: 100%; transform: scale(1.3); height: 225px; width: 100%; }
 .featured-listing .card>img:hover { transform: scale(1);}
-.featured-listing .card-text { position: absolute; bottom: 10px; left: 10px; color: #fff; font-weight: bold; }
+.featured-listing .card-text { position: absolute; bottom: 0; left: 0; color: #fff; font-weight: bold; background: rgba(0, 0, 0, .6); width: 100%; padding: 5px 10px; }
 
-.recent-listing>.container>.row { margin-left: -21px; margin-right: -21px; }
+.recent-listing>.container>.row:not(.heading) { margin-left: -21px; margin-right: -21px; }
 .recent-listing .card { border-radius: 0; width: 25%; }
 .recent-listing .card img { height: 175px; width: 100%; }
 .recent-listing .card:hover, .recent-listing .card:focus { box-shadow: 0 20px 10px -10px #888; transform: translate(0,-15px); }
@@ -20,7 +30,7 @@
 .card-wrap { margin: 7px; background: #f4f4f4; border: 1px solid #ddd; overflow: hidden; }
 .recent-listing .btn { width: 45%; margin: 0 1%; padding-left: 0; padding-right: 0; }
 
-.popular-listing h2 { background:#0c8548; color: #fff; font-size: 21px; padding: 10px; }
+.popular-listing h2 { background:#0c8548; color: #fff; font-size: 21px; padding: 10px 10px 12px; }
 .popular-listing a { color: #333; font-size: 14px; }
 
 .foo { background: #595959; color: #fff; }
@@ -38,7 +48,15 @@
 .btn-default { background-color: #595959; border-color: #424242; }
 .btn-default:hover, .btn-default:focus { background: #777; }
 .btn-success { background-color: #118149; border-color: #047c40; }
+.btn-danger { background-color: #eb3336; border-color: #d63234; }
+.btn-danger:hover, .btn-danger:focus { background-color: #f35b5d; }
 .pos-rel { position: relative; }
 .overlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: .4; background: #000; }
 .opacity5 { opacity: .5; }
 .img-res { max-width: 100%; max-height: 100%; }
+
+
+
+
+
+/************************Responsive**********************/
