@@ -3,9 +3,9 @@
 .navbar { background-color: #068149; border-radius: 0; }
 .navbar-brand { max-width: 225px; padding: 0; }
 .navbar-brand img { max-width: 100%; }
-.form-ul-wrap { padding-top: 15px; }
+.form-ul-wrap { padding-top: 15px; text-align: right; }
 
-.navbar .navbar-nav { padding-top: 10px; }
+.navbar .navbar-nav { padding-top: 10px; vertical-align: top; }
 .navbar-nav .nav-link { color: #fff; padding: 0; line-height: 1; padding-bottom: 2px; font-size: 17px; }
 .navbar-nav .nav-link:hover { color: #ccc; }
 .navbar-nav .nav-item { border-right: 1px solid #fff; padding-right: 1em; }
@@ -13,7 +13,7 @@
 .navbar .input-group-addon { border: none; border-radius: 0; background: #e6583b; color: #fff; }
 .navbar .form-inline .input-group>.form-control { border: none; border-radius: 0; }
 .auto-banner { background: url(../img/young-woman-receiving-keys-new-car-her-53965023.jpg) no-repeat center center /cover; height: 600px; }
-.auto-banner .search-form { background: #f4f4f4; border: 3px solid #0c8548; border-radius: 15px; margin-top: 70px; }
+.search-form { background: #f4f4f4; border: 3px solid #0c8548; border-radius: 15px; margin-top: 70px; }
 
 .heading { background: url(../img/bodybg.jpg) repeat left top; border-left: 10px solid #068149; padding: 10px 10px 12px; text-align: left; }
 
@@ -54,9 +54,44 @@
 .overlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: .4; background: #000; }
 .opacity5 { opacity: .5; }
 .img-res { max-width: 100%; max-height: 100%; }
-
-
-
+.inline-block { display: inline-block !Important; }
+.visible-odd { display: none; }
+.text-center { text-align: center; }
 
 
 /************************Responsive**********************/
+
+@media all and (max-width:991px) {
+    body { overflow-x: hidden; }
+    .container { width: auto; }
+    .featured-listing, .recent-listing, .popular-listing, .foo { padding-left: 15px; padding-right: 15px; }
+    .featured-listing .card>img, .recent-listing .card img { height: 200px; }
+    .recent-listing .card { width: 33.3333333%; }
+    .copyright { margin-left: -15px; margin-right: -15px; }
+}
+@media all and (max-width:900px) {
+    .form-ul-wrap { padding-top: 0; }
+    .navbar .navbar-nav { padding-top: 5px; padding-bottom: 2px; }
+    .navbar-nav .nav-item:nth-last-child(1) { padding-right: 0; }   
+}
+@media all and (max-width:769px) {
+    .auto-banner { height: 500px; }
+    .auto-banner .search-form { margin-top: 10px; }
+    .featured-listing .card>img, .recent-listing .card img { height: 150px; }
+    .foo-logo { max-width: 250px; margin-bottom: 30px; }
+}
+@media all and (max-width:650px) {
+    .auto-banner .search-form { width: 100%; }
+    .featured-listing .card, .recent-listing .card { width: 50%; }
+    .featured-listing, .recent-listing, .recent-listing .btn { font-size: 13px; }
+    .visible-odd { display: block; }
+    .navbar-brand { margin: 0 auto; display: inline-block; float: none; }
+}
+@media all and (max-width:575px) {
+    .auto-banner { height: 250px; }
+    .search-form { margin-top: 10px; margin-bottom: 30px; border-radius: 0; margin-left: 15px; margin-right: 15px; width: auto; float: none; }
+    h2, h3, .popular-listing h2 { font-size: 20px; }
+    .recent-listing .btn { width: 100%; margin: 0; margin-top: 5px; }
+    .card-wrap { padding-bottom: 0 !important; margin-bottom: 0; }
+    
+}
