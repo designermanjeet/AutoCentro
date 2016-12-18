@@ -8,12 +8,14 @@
 .auto-banner .search-form { background: #f4f4f4; border: 3px solid #0c8548; border-radius: 15px; margin-top: 70px; }
 
 .featured-listing .card, .recent-listing .card { width: 33.3333333%; border: none; float: left; margin-bottom: 0; overflow: hidden; border-radius: 0; }
-.featured-listing .card>img { max-width: 100%; max-height: 100%; transform: scale(1.1);}
+.featured-listing .card>img { max-width: 100%; max-height: 100%; transform: scale(1.1); height: 225px; width: 100%; }
 .featured-listing .card>img:hover { transform: scale(1);}
 .featured-listing .card-text { position: absolute; bottom: 10px; left: 10px; color: #fff; font-weight: bold; }
 
-.recent-listing .card { border-radius: 0; }
+.recent-listing .card { border-radius: 0; width: 25%; }
+.recent-listing .card img { height: 175px; width: 100%; }
 .card-wrap { margin: 7px; background: #f4f4f4; border: 1px solid #eee; }
+.recent-listing .btn { width: 45%; margin: 0 1%; padding-left: 0; padding-right: 0; }
 
 /******************Common Class********************/
 .btn { border-radius: 0; }
